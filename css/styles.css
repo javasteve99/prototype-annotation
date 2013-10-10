@@ -477,8 +477,6 @@ select:focus:invalid {
         font-style: italic; }
       [role="main"] .blockquote figcaption:before {
         content: '\2014 \00A0'; }
-  [role="main"] #demo-form {
-    width: 400px; }
 
 [role="contentinfo"] {
   border-top: 1px solid #cccccc; }
