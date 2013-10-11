@@ -8,7 +8,6 @@
 
 ;(function () {
   "use strict";
-  /*jshint validthis:true, jquery:true */
 
   /* Remove elements from end of file and place in proper parents ========== */
   $('#annotations .annotation').each(function() {
@@ -20,13 +19,13 @@
   /* Ditch empty container for annotations ================================= */
   $('#annotations').remove();
 
-  /* Show this annotation on click ========================================= */
+  /* Show this annotation text on click ==================================== */
   $('.trigger').on('click', function() {
     $(this).parent().toggleClass('show-this-annotation');
     return false;
   });
 
-  /* Enable toggling of all annotation visibility ========================== */
+  /* Change visibility of all annotations ================================== */
   $(document).on('keyup', function(e) {
     if (e.keyCode === 65 && e.altKey) { // if user presses Option + A (Mac) or Alt + A (PC)
       $('.annotation').toggleClass('hide-all-annotations');
