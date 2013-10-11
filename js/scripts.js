@@ -20,9 +20,24 @@
   /* Ditch empty container for annotations ================================= */
   $('#annotations').remove();
 
-  /* Show annotation on click ============================================== */
+  /* Show this annotation on click ========================================= */
   $('.trigger').on('click', function() {
-    $(this).parent().toggleClass('visible');
+    $(this).parent().toggleClass('show-this-annotation');
     return false;
   });
+
+  /* Enable toggling of all annotation visibility ========================== */
+  $(document).on('keyup', function(e) {
+    if (e.keyCode === 65 && e.altKey) { // if user presses Option + A (Mac) or Alt + A (PC)
+      $('.annotation').toggleClass('hide-all-annotations');
+    }
+  });
+
+  $(document).on('touchmove', function(e) {
+    if (e.originalEvent.touches.length === 2) { // if user drags 2 fingers
+      $('.annotation').toggleClass('hide-all-annotations');
+      e.preventDefault();
+    }
+  });
+
 }());

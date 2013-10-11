@@ -100,10 +100,18 @@
   }
 }
 
-.annotation.visible {
+.annotation.show-this-annotation {
   opacity: 1;
 
   span {
     opacity: 1;
+  }
+}
+
+.annotation.hide-all-annotations {
+  opacity: 0;
+
+  .trigger {
+    pointer-events: none;
   }
 }

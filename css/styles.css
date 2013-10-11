@@ -530,10 +530,15 @@ select:focus:invalid {
     position: absolute;
     z-index: 99; }
 
-.annotation.visible {
+.annotation.show-this-annotation {
   opacity: 1; }
-  .annotation.visible span {
+  .annotation.show-this-annotation span {
     opacity: 1; }
+
+.annotation.hide-all-annotations {
+  opacity: 0; }
+  .annotation.hide-all-annotations .trigger {
+    pointer-events: none; }
 
 /* Helper Classes =============================================================================== */
 .hide {
