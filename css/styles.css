@@ -492,6 +492,7 @@ select:focus:invalid {
   left: 0;
   max-width: 50%;
   opacity: 0.2;
+  pointer-events: none;
   -webkit-transition: opacity 0.2s linear;
   -moz-transition: opacity 0.2s linear;
   -ms-transition: opacity 0.2s linear;
@@ -505,6 +506,7 @@ select:focus:invalid {
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     padding: 4px 8px 4px 36px;
+    margin: 2px 0 0 8px;
     display: inline-block;
     opacity: 0;
     -webkit-transition: opacity 0.2s linear;
@@ -524,10 +526,9 @@ select:focus:invalid {
     text-align: center;
     line-height: 36px;
     text-decoration: none;
+    pointer-events: auto;
     position: absolute;
-    z-index: 99;
-    top: -2px;
-    left: -8px; }
+    z-index: 99; }
 
 .annotation.visible {
   opacity: 1; }
