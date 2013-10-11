@@ -8,6 +8,9 @@
     $('[data-annotation="' + annotationNumber + '"]').css('position', 'relative').append($('#annotation-' + annotationNumber));
   });
 
+  /* Ditch empty container for annotations ================================= */
+  $('#annotations').remove();
+
   /* Show annotation on click ============================================== */
   $('.trigger').on('click', function() {
     $(this).parent().toggleClass('visible');
