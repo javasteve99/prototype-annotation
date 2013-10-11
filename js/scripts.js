@@ -1,4 +1,12 @@
-(function () {
+/*  Prototype Annotation Framework
+  Author: Steve Hickey, UX Designer & Front-End Developer | https://twitter.com/stevehickeydsgn | http://stevehickeydesign.com/
+  Company: Fresh Tilled Soil | http://www.freshtilledsoil.com/
+
+  Licensed for use under the WTFPL | http://en.wikipedia.org/wiki/WTFPL -- Free for all uses without attribution or credit.
+  The author is not liable for anything that doesn't work or breaks. You're on your own, you've been warned.
+*/
+
+;(function () {
   "use strict";
   /*jshint validthis:true, jquery:true */
 
