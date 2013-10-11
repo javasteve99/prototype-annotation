@@ -500,12 +500,18 @@ select:focus:invalid {
   .annotation:hover {
     opacity: 1; }
   .annotation span {
-    display: none;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.75);
     border-radius: 4px;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-    padding: 4px 8px 4px 36px; }
+    padding: 4px 8px 4px 36px;
+    display: inline-block;
+    opacity: 0;
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear; }
   .annotation .trigger {
     display: block;
     width: 36px;
@@ -526,7 +532,7 @@ select:focus:invalid {
 .annotation.visible {
   opacity: 1; }
   .annotation.visible span {
-    display: inline-block; }
+    opacity: 1; }
 
 /* Helper Classes =============================================================================== */
 .hide {

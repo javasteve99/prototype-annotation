@@ -70,12 +70,14 @@
   }
 
   span {
-    display: none;
-    background: rgba(#000, 0.5);
+    background: rgba(#000, 0.75);
     border-radius: 4px;
     color: #fff;
     text-shadow: 1px 1px 2px rgba(#000, 0.3);
     padding: 4px 8px 4px 36px;
+    display: inline-block;
+    opacity: 0;
+    @include transition(opacity 0.2s linear);
   }
 
   .trigger {
@@ -101,6 +103,6 @@
   opacity: 1;
 
   span {
-    display: inline-block;
+    opacity: 1;
   }
 }
